@@ -54,12 +54,14 @@
                         }
                     ]
                 },
+                "hasElasticScrolling": true,
                 "hasSelectedIndexScrolling": false,
                 "isSelectionEnabled": false,
                 "linearScrollingVector": [
                     -300,
                     0
                 ],
+                "momentumDuration": "1",
                 "paths": [
                     {
                         "knots": [
@@ -116,14 +118,17 @@
                 "scrollingTransitionTimingFunction": "ease",
                 "scrollVectorX": true,
                 "scrollVectorY": true,
-                "selectedIndexScrollingOffset": 0
+                "selectedIndexScrollingOffset": 0,
+                "stride": "1"
             }
         },
         "rangeController": {
             "prototype": "montage/core/range-controller",
             "properties": {
                 "content": [
-                    "This","a","o"
+                    "This",
+                    "a",
+                    "o"
                 ]
             }
         }
@@ -137,7 +142,7 @@
         </button>
         <div style="position: absolute; top: 40px; left: 0; right: 0; bottom: 0" data-montage-id="flow">
             <div class="wrap">
-               e
+                e
             </div>
         </div>
     </div>
