@@ -32,161 +32,48 @@
             "prototype": "montage/ui/flow.reel",
             "properties": {
                 "element": {"#": "flow"},
-                "cameraFov": 50,
                 "cameraPosition": [
-                    410,
-                    448.251,
-                    2459.309
+                    0,
+                    0,
+                    1500
                 ],
-                "cameraTargetPoint": [
-                    410,
-                    448.251,
-                    959.3090000000002
-                ],
-                "contentController": {"@": "rangeController"},
-                "flowEditorMetadata": {
-                    "flowEditorVersion": 0.1,
-                    "shapes": [
-                        {
-                            "type": "FlowSpline",
-                            "name": "Spline 2",
-                            "pathIndex": 0,
-                            "id": 274
-                        },
-                        {
-                            "type": "FlowSpline",
-                            "name": "Spline 1",
-                            "pathIndex": 1
-                        }
-                    ]
-                },
-                "hasElasticScrolling": true,
-                "hasSelectedIndexScrolling": true,
-                "isSelectionEnabled": true,
-                "linearScrollingVector": [
-                    -300,
-                    0
-                ],
-                "momentumDuration": "1",
                 "paths": [
                     {
                         "knots": [
                             {
-                                "previousHandlerPosition": [],
-                                "nextDensity": 10,
+                                "knotPosition": [
+                                    -2400,
+                                    0,
+                                    -1
+                                ],
+                                "nextHandlerPosition": [
+                                    -800,
+                                    0,
+                                    -1
+                                ],
                                 "previousDensity": 10,
+                                "nextDensity": 10
+                            },
+                            {
                                 "knotPosition": [
-                                    -12.711814481965803,
-                                    -1099.721563664973,
-                                    0
+                                    2400,
+                                    0,
+                                    -1
                                 ],
-                                "rotateX": 0,
-                                "rotateY": 0,
-                                "rotateZ": 0,
-                                "opacity": 1,
-                                "nextHandlerPosition": [
-                                    -12.711814481965803,
-                                    -1099.721563664973,
-                                    0
-                                ]
+                                "previousHandlerPosition": [
+                                    800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
                             }
                         ],
-                        "units": {
-                            "rotateX": "",
-                            "rotateY": "",
-                            "rotateZ": "",
-                            "opacity": ""
-                        },
                         "headOffset": 0,
-                        "tailOffset": 0
-                    },
-                    {
-                        "knots": [
-                            {
-                                "previousHandlerPosition": [],
-                                "nextDensity": 1,
-                                "previousDensity": 1,
-                                "knotPosition": [
-                                    -16.909,
-                                    -787.571,
-                                    -1272.389
-                                ],
-                                "rotateX": 0,
-                                "rotateY": 0,
-                                "rotateZ": 0,
-                                "opacity": 1,
-                                "nextHandlerPosition": [
-                                    -16.909,
-                                    -787.571,
-                                    -1272.389
-                                ]
-                            },
-                            {
-                                "knotPosition": [
-                                    -4.318966245108641,
-                                    -3.5139747603411706,
-                                    -377.0750280601212
-                                ],
-                                "nextHandlerPosition": [
-                                    -4.318966245108641,
-                                    -3.5139747603411706,
-                                    -377.0750280601212
-                                ],
-                                "previousHandlerPosition": [
-                                    -4.318966245108641,
-                                    -3.5139747603411706,
-                                    -377.0750280601212
-                                ],
-                                "nextDensity": 1.7,
-                                "previousDensity": 1.7,
-                                "rotateX": 0,
-                                "rotateY": 0,
-                                "rotateZ": 0,
-                                "opacity": 1
-                            },
-                            {
-                                "knotPosition": [
-                                    1.9758418198985055,
-                                    2094.4868292098245,
-                                    1555.3916163294195
-                                ],
-                                "nextHandlerPosition": [
-                                    1.9758418198985055,
-                                    2094.4868292098245,
-                                    1555.3916163294195
-                                ],
-                                "previousHandlerPosition": [
-                                    1.9758418198985055,
-                                    2094.4868292098245,
-                                    1555.3916163294195
-                                ],
-                                "nextDensity": 0.2,
-                                "previousDensity": 0.2,
-                                "rotateX": 1.5,
-                                "rotateY": 0,
-                                "rotateZ": 0,
-                                "opacity": 1
-                            }
-                        ],
-                        "units": {
-                            "rotateX": "",
-                            "rotateY": "",
-                            "rotateZ": "",
-                            "opacity": ""
-                        },
-                        "headOffset": 2,
-                        "tailOffset": 0
+                        "tailOffset": 0,
+                        "units": {}
                     }
-                ],
-                "scrollingTransitionDuration": 1500,
-                "scrollingTransitionTimingFunction": "ease",
-                "scrollVectorX": true,
-                "scrollVectorY": true,
-                "selectedIndexes": [
-                    0
-                ],
-                "selectedIndexScrollingOffset": 0,
-                "stride": "3"
+                ]
             }
         },
         "rangeController": {
@@ -196,27 +83,17 @@
                     "This"
                 ]
             }
-        },
-        "text": {
-            "prototype": "digit/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@flow:iteration.object"}
-            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <button data-montage-id="button"></button>
-        <div style="position: absolute; top: 40px; left: 0; right: 0; bottom: 0" data-montage-id="flow">
-            <div class="wrap">
-                <p data-montage-id="text"></p>
-            </div>
+        <button data-montage-id="button">
+
+        </button>
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+            <div class="wrap"> * </div>
         </div>
     </div>
 </body>
