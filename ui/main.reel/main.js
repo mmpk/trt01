@@ -19,8 +19,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function (event) {
              var flow = this.templateObjects.flow
              var arr = flow.cameraPosition
-             arr[1] = arr[1]+1100
+             for(var i=0;i<1000;i++)
+             {
+             arr[1] = arr[1]+50
              flow.cameraPosition = arr
+             }
         }
     }
 
