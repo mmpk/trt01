@@ -1,7 +1,10 @@
 .Main {}
 p {font-size: 7.1em;}
 .wrap{
-    background: yellow;
+    background-image: url('http://montagestudio.com/assets/images/company/logo/Montage_Vert_FC_Transparent.png');
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 1024px;
     height: 960px;
     border: 10px solid gray;
