@@ -13,5 +13,13 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+
+    handleButtonAction: {
+        value: function (event) {
+             var flow = this.templateObjects.flow
+             flow.cameraPosition[2] = flow.cameraPosition[2] +500
+        }
     }
+
 });
