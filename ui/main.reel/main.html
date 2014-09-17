@@ -32,28 +32,55 @@
             "prototype": "montage/ui/flow.reel",
             "properties": {
                 "element": {"#": "flow"},
+                "cameraFov": 50,
                 "cameraPosition": [
                     0,
+                    -22.263450834879677,
+                    2991.65120593692
+                ],
+                "cameraTargetPoint": [
                     0,
-                    1500
+                    -22.263450834879677,
+                    1491.6512059369202
                 ],
                 "contentController": {"@": "rangeController"},
+                "flowEditorMetadata": {
+                    "flowEditorVersion": 0.1,
+                    "shapes": [
+                        {
+                            "type": "FlowSpline",
+                            "name": "Spline 1",
+                            "pathIndex": 0
+                        }
+                    ]
+                },
+                "hasSelectedIndexScrolling": false,
+                "isSelectionEnabled": false,
+                "linearScrollingVector": [
+                    -300,
+                    0
+                ],
                 "paths": [
                     {
                         "knots": [
                             {
+                                "previousHandlerPosition": [],
+                                "nextDensity": 10,
+                                "previousDensity": 10,
                                 "knotPosition": [
                                     -2400,
                                     0,
                                     -1
                                 ],
+                                "rotateX": 0,
+                                "rotateY": 0,
+                                "rotateZ": 0,
+                                "opacity": 1,
                                 "nextHandlerPosition": [
                                     -800,
                                     0,
                                     -1
-                                ],
-                                "previousDensity": 10,
-                                "nextDensity": 10
+                                ]
                             },
                             {
                                 "knotPosition": [
@@ -61,20 +88,35 @@
                                     0,
                                     -1
                                 ],
+                                "nextHandlerPosition": [],
                                 "previousHandlerPosition": [
                                     800,
                                     0,
                                     -1
                                 ],
+                                "nextDensity": 10,
                                 "previousDensity": 10,
-                                "nextDensity": 10
+                                "rotateX": 0,
+                                "rotateY": 0,
+                                "rotateZ": 0,
+                                "opacity": 1
                             }
                         ],
+                        "units": {
+                            "rotateX": "",
+                            "rotateY": "",
+                            "rotateZ": "",
+                            "opacity": ""
+                        },
                         "headOffset": 0,
-                        "tailOffset": 0,
-                        "units": {}
+                        "tailOffset": 0
                     }
-                ]
+                ],
+                "scrollingTransitionDuration": 500,
+                "scrollingTransitionTimingFunction": "ease",
+                "scrollVectorX": true,
+                "scrollVectorY": true,
+                "selectedIndexScrollingOffset": 0
             }
         },
         "rangeController": {
@@ -93,9 +135,9 @@
         <button data-montage-id="button">
 
         </button>
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+        <div style="position: absolute; top: 40px; left: 0; right: 0; bottom: 0" data-montage-id="flow">
             <div class="wrap">
-                *
+               e
             </div>
         </div>
     </div>
