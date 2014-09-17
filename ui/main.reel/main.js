@@ -19,7 +19,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function (event) {
              var flow = this.templateObjects.flow
              var arr = flow.cameraPosition
-             arr[2] = arr[2]/1.5
+             arr[2] = arr[2]-1600
              flow.cameraPosition = arr
         }
     }
