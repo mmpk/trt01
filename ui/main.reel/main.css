@@ -1,8 +1,7 @@
 .Main {}
 p {font-size: 7.1em;}
 .wrap{
-    border: 1.5em solid gray;
-    padding: 5em 25em;
+    background: yellow;
     overflow: visible;
     text-align: center;
 }
