@@ -13,6 +13,21 @@
                 "element": {"#": "main"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
         "flow": {
             "prototype": "montage/ui/flow.reel",
             "properties": {
@@ -20,13 +35,13 @@
                 "cameraFov": 50,
                 "cameraPosition": [
                     410,
-                    403.6134512507206,
-                    2370.034218269415
+                    448.25099287869307,
+                    2459.30930152536
                 ],
                 "cameraTargetPoint": [
                     410,
-                    403.6134512507206,
-                    870.0342182694149
+                    448.25099287869307,
+                    959.3093015253598
                 ],
                 "contentController": {"@": "rangeController"},
                 "flowEditorMetadata": {
@@ -211,7 +226,8 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+        <button data-montage-id="button"></button>
+        <div style="position: absolute; top: 40px; left: 0; right: 0; bottom: 0" data-montage-id="flow">
             <div class="wrap">
                 <p data-montage-id="text"></p>
             </div>
