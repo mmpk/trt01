@@ -31,7 +31,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                  setTimeout(function(){
                  arr[0] = arr[0]-10
                  flow.cameraPosition = arr
-                 },100})
+                 },100)
              }
         }
     },
