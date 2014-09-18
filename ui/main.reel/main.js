@@ -45,7 +45,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             function interval()
             {
                 i++; 
-                if(i > 200)  clearInterval(plusInt);
+                if(i > 200000000000)  clearInterval(plusInt);
                 arr[0] = arr[0]-15
                 flow.cameraTargetPoint = arr
             }
