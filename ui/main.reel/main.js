@@ -21,19 +21,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             3129.0885767498976
         ]
     },
-    pushData: {
-        value: function (v) {
-            var flow = this.templateObjects.flow; 
-            var i = 0;
-            function interval()
-            {
-                i++; 
-                if(i > 200)  clearInterval(plusInt);
-                flow.cameraPosition = [flow.cameraPosition[0], flow.cameraPosition[1], flow.cameraPosition[2]-5]; 
-            }
-            var plusInt=setInterval(interval,5);
-        }
-    },
+    
     handleButtonAction: {
         value: function (event) {
              var flow = this.templateObjects.flow
@@ -51,18 +39,33 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     handleButton2Action: {
         value: function (event) {
-                var arr = this.Pos
-                arr[1] = arr[1]-100
-                this.Pos = arr
-
+            var flow = this.templateObjects.flow
+            var arr = flow.cameraPosition
+            var i = 0;
+            function interval()
+            {
+                i++; 
+                if(i > 200)  clearInterval(plusInt);
+                arr[1] = arr[1]-5
+                flow.cameraPosition = arr
+            }
+            var plusInt=setInterval(interval,5);
         }
     },
     handleButton3Action: {
-            value: function (event) {
-                var arr = this.Pos
-                arr[2] = arr[2]-100
-                this.Pos = arr
+        value: function (event) {
+            var flow = this.templateObjects.flow
+            var arr = flow.cameraPosition
+            var i = 0;
+            function interval()
+            {
+                i++; 
+                if(i > 200)  clearInterval(plusInt);
+                arr[2] = arr[2]-5
+                flow.cameraPosition = arr
             }
+            var plusInt=setInterval(interval,5);
+        }
         }
 
 });
