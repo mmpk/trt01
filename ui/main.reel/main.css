@@ -1,6 +1,12 @@
 body{background: #333;}
 .Main {}
-p {font-size: 7.1em;}
+p {
+    font-size: 9.1em;
+    color: red;
+}
+.digit-Text {
+    color: red;
+}
 .wrap{
     background-image: url('http://montagestudio.com/assets/images/company/logo/Montage_Vert_FC_Transparent.png');
     background-color: orange;
