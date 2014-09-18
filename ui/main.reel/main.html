@@ -58,6 +58,13 @@
                 }
             ]
         },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
         "flow": {
             "prototype": "montage/ui/flow.reel",
             "properties": {
@@ -218,18 +225,6 @@
                 "stride": "1"
             }
         },
-        "radio": {
-            "prototype": "digit/ui/radio-button.reel",
-            "properties": {
-                "element": {"#": "radio"},
-                "active": true,
-                "checked": false,
-                "enabled": true
-            },
-            "bindings": {
-                "checked": {"<->": "@owner.Pos"}
-            }
-        },
         "rangeController": {
             "prototype": "montage/core/range-controller",
             "properties": {
@@ -273,10 +268,10 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <input type="radio" data-montage-id="radio">
         <div data-montage-id="slot">
 
         </div>
+        <input type="checkbox" data-montage-id="checkbox">
         <button data-montage-id="button">
 
         </button>

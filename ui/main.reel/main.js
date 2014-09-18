@@ -3,7 +3,6 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-
 /**
  * @class Main
  * @extends Component
@@ -27,7 +26,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              {
                  i++; 
                  if(i > 200)  clearInterval(plusInt);
-                 if(this.Pos) {
+                 if(this.templateObjects.checkbox.checked) {
                      arr[0] = arr[0]-5
                  }else{
                      arr[0] = arr[0]+5
@@ -46,7 +45,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);               
-                if(this.Pos) {
+                if(this.templateObjects.checkbox.checked) {
                     arr[1] = arr[1]-5
                 }else{
                     arr[1] = arr[1]+5
@@ -65,7 +64,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);
-                if(this.Pos) {
+                if(this.templateObjects.checkbox.checked) {
                     arr[2] = arr[2]-5
                 }else{
                     arr[2] = arr[2]+5
