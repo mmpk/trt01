@@ -26,11 +26,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              function interval()
              {
                  i++; 
-                 if(i > 10000)  clearInterval(plusInt);
+                 if(i > 500)  clearInterval(plusInt);
                  if(ch) {
-                     arr[0] = arr[0]-5
+                     arr[0] = arr[0]-10
                  }else{
-                     arr[0] = arr[0]+5
+                     arr[0] = arr[0]+10
                  }
                  flow.cameraPosition = arr
              }
@@ -46,11 +46,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             function interval()
             {
                 i++; 
-                if(i > 10000)  clearInterval(plusInt);               
+                if(i > 500)  clearInterval(plusInt);               
                 if(ch) {
-                    arr[1] = arr[1]-5
+                    arr[1] = arr[1]-10
                 }else{
-                    arr[1] = arr[1]+5
+                    arr[1] = arr[1]+10
                 }
                 flow.cameraPosition = arr
             }
@@ -66,11 +66,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             function interval()
             {
                 i++; 
-                if(i > 10000)  clearInterval(plusInt);
+                if(i > 500)  clearInterval(plusInt);
                 if(ch) {
-                    arr[2] = arr[2]-5
+                    arr[2] = arr[2]-10
                 }else{
-                    arr[2] = arr[2]+5
+                    arr[2] = arr[2]+10
                 }
                 flow.cameraPosition = arr
             }
