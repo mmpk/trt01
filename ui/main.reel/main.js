@@ -25,6 +25,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleButtonAction: {
         value: function (event) {
              var arr = this.Pos
+             console.log(arr)
              arr[0] = arr[0]-100
              this.Pos = arr
 
