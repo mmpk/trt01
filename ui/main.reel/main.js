@@ -15,11 +15,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     Pos: {
-        value: [
-            0,
-            2071.91628776095,
-            3129.0885767498976
-        ]
+        value: true
     },
     
     handleButtonAction: {
@@ -31,7 +27,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              {
                  i++; 
                  if(i > 200)  clearInterval(plusInt);
-                 arr[0] = arr[0]-5
+                 if(this.Pos) {
+                     arr[0] = arr[0]-5
+                 }else{
+                     arr[0] = arr[0]+5
+                 }
                  flow.cameraPosition = arr
              }
              var plusInt=setInterval(interval,5);
@@ -45,8 +45,12 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             function interval()
             {
                 i++; 
-                if(i > 200000000000)  clearInterval(plusInt);
-                arr[0] = arr[0]-15
+                if(i > 200)  clearInterval(plusInt);               
+                if(this.Pos) {
+                    arr[1] = arr[1]-5
+                }else{
+                    arr[1] = arr[1]+5
+                }
                 flow.cameraTargetPoint = arr
             }
             var plusInt=setInterval(interval,5);
@@ -61,7 +65,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);
-                arr[2] = arr[2]-5
+                if(this.Pos) {
+                    arr[2] = arr[2]-5
+                }else{
+                    arr[2] = arr[2]+5
+                }
                 flow.cameraPosition = arr
             }
             var plusInt=setInterval(interval,5);
