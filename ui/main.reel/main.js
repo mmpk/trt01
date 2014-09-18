@@ -11,14 +11,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     constructor: {
         value: function Main() {
             this.super();
+            this.templateObjects.checkbox;
         }
     },
     Pos: {
-        value: true
+        value: undefined
     },
     
     handleButtonAction: {
         value: function (event) {
+            console.log(this.Pos)
              var flow = this.templateObjects.flow
              var arr = flow.cameraPosition
              var i = 0;
