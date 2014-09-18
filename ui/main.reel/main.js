@@ -19,6 +19,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleButtonAction: {
         value: function (event) {
+            console.log(this.templateObjects.checkbox)
              var flow = this.templateObjects.flow
              var arr = flow.cameraPosition
              var i = 0;
