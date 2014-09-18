@@ -28,8 +28,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              var arr = flow.cameraPosition
              for(var i = 0; i < 1000; i++)
              {
+                 setTimeout(function(){
                  arr[0] = arr[0]-10
                  flow.cameraPosition = arr
+                 },100})
              }
         }
     },
