@@ -43,20 +43,35 @@
                 }
             ]
         },
+        "button3": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button2"},
+                "enabled": true,
+                "label": "Button"
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
         "flow": {
             "prototype": "montage/ui/flow.reel",
             "properties": {
                 "element": {"#": "flow"},
                 "cameraFov": 50,
                 "cameraPosition": [
-                    0,
-                    2071.91628776095,
-                    3129.0885767498976
+                    11.111111111110858,
+                    95.43178910446113,
+                    2613.358272644572
                 ],
                 "cameraTargetPoint": [
-                    0,
-                    957.6796934097423,
-                    1491.6509999999998
+                    11.111,
+                    92.30660650665061,
+                    975.9210364042151
                 ],
                 "contentController": {"@": "rangeController"},
                 "flowEditorMetadata": {
@@ -65,18 +80,25 @@
                         {
                             "type": "FlowSpline",
                             "name": "Spline 1",
-                            "pathIndex": 0
+                            "pathIndex": 0,
+                            "id": 35
+                        },
+                        {
+                            "type": "FlowSpline",
+                            "name": "Spline 2",
+                            "pathIndex": 1,
+                            "id": 42
                         }
                     ]
                 },
                 "hasElasticScrolling": true,
-                "hasSelectedIndexScrolling": false,
-                "isSelectionEnabled": false,
+                "hasSelectedIndexScrolling": true,
+                "isSelectionEnabled": true,
                 "linearScrollingVector": [
                     -300,
                     0
                 ],
-                "momentumDuration": "1",
+                "momentumDuration": "0",
                 "paths": [
                     {
                         "knots": [
@@ -85,38 +107,92 @@
                                 "nextDensity": 10,
                                 "previousDensity": 10,
                                 "knotPosition": [
-                                    -2400,
+                                    211.111,
                                     0,
-                                    -1
+                                    -13.733
                                 ],
                                 "rotateX": 0,
                                 "rotateY": 0,
                                 "rotateZ": 0,
                                 "opacity": 1,
                                 "nextHandlerPosition": [
-                                    -800,
+                                    211.111,
                                     0,
-                                    -1
+                                    -13.733
+                                ]
+                            }
+                        ],
+                        "units": {
+                            "rotateX": "",
+                            "rotateY": "",
+                            "rotateZ": "",
+                            "opacity": ""
+                        },
+                        "headOffset": 0,
+                        "tailOffset": 0
+                    },
+                    {
+                        "knots": [
+                            {
+                                "previousHandlerPosition": [],
+                                "nextDensity": 2,
+                                "previousDensity": 2,
+                                "knotPosition": [
+                                    -2543.444,
+                                    0,
+                                    -513.733
+                                ],
+                                "rotateX": 0,
+                                "rotateY": 0,
+                                "rotateZ": 0,
+                                "opacity": 1,
+                                "nextHandlerPosition": [
+                                    -2543.444,
+                                    0,
+                                    -513.733
                                 ]
                             },
                             {
                                 "knotPosition": [
-                                    2400,
+                                    1.0004444444443834,
                                     0,
-                                    -1
+                                    630.7114444444445
                                 ],
                                 "nextHandlerPosition": [
-                                    null,
-                                    null,
-                                    null
+                                    1.0004444444443834,
+                                    0,
+                                    630.7114444444445
                                 ],
                                 "previousHandlerPosition": [
-                                    800,
+                                    1.0004444444443834,
                                     0,
-                                    -1
+                                    630.7114444444445
                                 ],
-                                "nextDensity": 10,
-                                "previousDensity": 10,
+                                "nextDensity": 2,
+                                "previousDensity": 2,
+                                "rotateX": 0,
+                                "rotateY": 0,
+                                "rotateZ": 0,
+                                "opacity": 1
+                            },
+                            {
+                                "knotPosition": [
+                                    2601.0004444444444,
+                                    0,
+                                    -424.844111111111
+                                ],
+                                "nextHandlerPosition": [
+                                    2601.0004444444444,
+                                    0,
+                                    -424.844111111111
+                                ],
+                                "previousHandlerPosition": [
+                                    2601.0004444444444,
+                                    0,
+                                    -424.844111111111
+                                ],
+                                "nextDensity": 2,
+                                "previousDensity": 2,
                                 "rotateX": 0,
                                 "rotateY": 0,
                                 "rotateZ": 0,
@@ -152,6 +228,16 @@
                     "IS",
                     "THE",
                     "Begining",
+                    "OF",
+                    "THIS",
+                    "IS",
+                    "THE",
+                    "Begining",
+                    "OF",
+                    "THIS",
+                    "IS",
+                    "THE",
+                    "Begining",
                     "OF"
                 ]
             }
@@ -178,7 +264,9 @@
 
         </button>
         <div style="position: absolute; top: 40px; left: 0; right: 0; bottom: 0" data-montage-id="flow">
-            <p data-montage-id="text"> </p>
+            <p data-montage-id="text">
+
+            </p>
         </div>
     </div>
 </body>
