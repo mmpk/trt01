@@ -24,22 +24,27 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleButtonAction: {
         value: function (event) {
-             var flow = this.templateObjects.flow
-             var arr = flow.cameraPosition
-             arr[1] = arr[1]+500
-             flow.cameraPosition = arr
+
+             var arr = this.Pos
+             arr[0] = arr[0]-100
+             this.Pos = arr
 
         }
     },
-
     handleButton2Action: {
         value: function (event) {
-            var flow = this.templateObjects.flow
-            var arr = flow.cameraPosition
-                arr[1] = arr[1]-500
-                flow.cameraPosition = arr
+                var arr = this.Pos
+                arr[1] = arr[1]-100
+                this.Pos = arr
 
         }
-    }
+    },
+    handleButton3Action: {
+            value: function (event) {
+                var arr = this.Pos
+                arr[2] = arr[2]-100
+                this.Pos = arr
+            }
+        }
 
 });
