@@ -222,10 +222,12 @@
             "prototype": "digit/ui/radio-button.reel",
             "properties": {
                 "element": {"#": "radio"},
-                "checked": true
+                "active": true,
+                "checked": false,
+                "enabled": true
             },
             "bindings": {
-                "enabled": {"<->": "@owner.Pos"}
+                "checked": {"<->": "@owner.Pos"}
             }
         },
         "rangeController": {
