@@ -21,18 +21,32 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             3129.0885767498976
         ]
     },
-
+    pushData: {
+        value: function (v) {
+            var flow = this.templateObjects.flow; 
+            var i = 0;
+            function interval()
+            {
+                i++; 
+                if(i > 200)  clearInterval(plusInt);
+                flow.cameraPosition = [flow.cameraPosition[0], flow.cameraPosition[1], flow.cameraPosition[2]-5]; 
+            }
+            var plusInt=setInterval(interval,5);
+        }
+    },
     handleButtonAction: {
         value: function (event) {
              var flow = this.templateObjects.flow
              var arr = flow.cameraPosition
-             for(var i = 0; i < 1000; i++)
+             var i = 0;
+             function interval()
              {
-                 setTimeout(function(){
-                 arr[0] = arr[0]-10
+                 i++; 
+                 if(i > 200)  clearInterval(plusInt);
+                 arr[0] = arr[0]-5
                  flow.cameraPosition = arr
-                 },100)
              }
+             var plusInt=setInterval(interval,5);
         }
     },
     handleButton2Action: {
