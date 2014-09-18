@@ -11,7 +11,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     constructor: {
         value: function Main() {
             this.super();
-            this.templateObjects.checkbox;
         }
     },
     Pos: {
@@ -20,7 +19,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleButtonAction: {
         value: function (event) {
-            console.log(this.Pos)
+             var ch = this.templateObjects.checkbox.checked
              var flow = this.templateObjects.flow
              var arr = flow.cameraPosition
              var i = 0;
@@ -28,7 +27,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              {
                  i++; 
                  if(i > 200)  clearInterval(plusInt);
-                 if(this.templateObjects.checkbox._checked) {
+                 if(ch) {
                      arr[0] = arr[0]-5
                  }else{
                      arr[0] = arr[0]+5
@@ -40,25 +39,27 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     handleButton2Action: {
         value: function (event) {
+            var ch = this.templateObjects.checkbox.checked
             var flow = this.templateObjects.flow
-            var arr = flow.cameraTargetPoint
+            var arr = flow.cameraPosition
             var i = 0;
             function interval()
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);               
-                if(this.templateObjects.checkbox._checked) {
+                if(ch) {
                     arr[1] = arr[1]-5
                 }else{
                     arr[1] = arr[1]+5
                 }
-                flow.cameraTargetPoint = arr
+                flow.cameraPosition = arr
             }
             var plusInt=setInterval(interval,5);
         }
     },
     handleButton3Action: {
         value: function (event) {
+            var ch = this.templateObjects.checkbox.checked
             var flow = this.templateObjects.flow
             var arr = flow.cameraPosition
             var i = 0;
@@ -66,7 +67,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);
-                if(this.templateObjects.checkbox._checked) {
+                if(ch) {
                     arr[2] = arr[2]-5
                 }else{
                     arr[2] = arr[2]+5
