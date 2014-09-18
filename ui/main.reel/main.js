@@ -19,7 +19,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     
     handleButtonAction: {
         value: function (event) {
-            console.log(this.templateObjects.checkbox)
              var flow = this.templateObjects.flow
              var arr = flow.cameraPosition
              var i = 0;
@@ -27,7 +26,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              {
                  i++; 
                  if(i > 200)  clearInterval(plusInt);
-                 if(this.templateObjects.checkbox.checked) {
+                 if(this.templateObjects.checkbox._checked) {
                      arr[0] = arr[0]-5
                  }else{
                      arr[0] = arr[0]+5
@@ -46,7 +45,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);               
-                if(this.templateObjects.checkbox.checked) {
+                if(this.templateObjects.checkbox._checked) {
                     arr[1] = arr[1]-5
                 }else{
                     arr[1] = arr[1]+5
@@ -65,7 +64,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);
-                if(this.templateObjects.checkbox.checked) {
+                if(this.templateObjects.checkbox._checked) {
                     arr[2] = arr[2]-5
                 }else{
                     arr[2] = arr[2]+5
