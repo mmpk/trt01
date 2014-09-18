@@ -14,6 +14,13 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
+    Pos: {
+        value: [
+            0,
+            2071.91628776095,
+            3129.0885767498976
+        ]
+    },
 
     handleButtonAction: {
         value: function (event) {
