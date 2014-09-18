@@ -40,14 +40,14 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleButton2Action: {
         value: function (event) {
             var flow = this.templateObjects.flow
-            var arr = flow.cameraPosition
+            var arr = flow.cameraTargetPoint
             var i = 0;
             function interval()
             {
                 i++; 
                 if(i > 200)  clearInterval(plusInt);
                 arr[1] = arr[1]-5
-                flow.cameraPosition = arr
+                flow.cameraTargetPoint = arr
             }
             var plusInt=setInterval(interval,5);
         }
