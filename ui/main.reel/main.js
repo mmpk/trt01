@@ -26,7 +26,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
              function interval()
              {
                  i++; 
-                 if(i > 200)  clearInterval(plusInt);
+                 if(i > 10000)  clearInterval(plusInt);
                  if(ch) {
                      arr[0] = arr[0]-5
                  }else{
@@ -46,7 +46,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             function interval()
             {
                 i++; 
-                if(i > 200)  clearInterval(plusInt);               
+                if(i > 10000)  clearInterval(plusInt);               
                 if(ch) {
                     arr[1] = arr[1]-5
                 }else{
@@ -66,7 +66,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             function interval()
             {
                 i++; 
-                if(i > 200)  clearInterval(plusInt);
+                if(i > 10000)  clearInterval(plusInt);
                 if(ch) {
                     arr[2] = arr[2]-5
                 }else{
